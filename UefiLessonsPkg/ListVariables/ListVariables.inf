@@ -1,0 +1,20 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = ListVariables
+  FILE_GUID                      = 68dd9d8b-8187-47e1-a7d4-30753b83b296
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+
+[Sources]
+  ListVariables.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiLib
+  ShellCEntryLib
+
+[Protocols]
+  
